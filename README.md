@@ -1,4 +1,5 @@
 # investment_property_tracker
+Find and track invesment properties
 
 ## User Story
 As a user, I want to be able to search by city, state, county in order to find property listings within user provided criteria.

@@ -1,7 +1,7 @@
 # investment_property_tracker
 
 ## Description
-This web application allows you to find and track invesment properties in different cities, states, and counties. It will allow you to add notes about the properties interested in. 
+This web application allows you to find and track invesment properties in different cities, states, and counties. You will be able to keep track of and add notes about the properties interested in. 
 
 ## User Story
 As a user, I want to be able to search by city, state, county in order to find property listings within user provided criteria.

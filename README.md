@@ -1,14 +1,18 @@
 # investment_property_tracker
 
+## User Story
 As a user, I want to be able to search by city, state, county in order to find property listings within user provided criteria.
 This allows the user to keep track of properties within user provided criteria.
 
-SKETCH 
+## Wireframe
 https://docs.google.com/presentation/d/1J1BY-O3rSaxkLZy61OxCN8j4KJdzYDuIgz4jcCL-Rgs/edit?usp=sharing
 
-APIS USED 
+## User Flow Diagram
+https://docs.google.com/presentation/d/1J1BY-O3rSaxkLZy61OxCN8j4KJdzYDuIgz4jcCL-Rgs/edit?usp=sharing
+
+## APIs Used
 -Google Maps
 -Zillow
 
-TASKS
+## Tasks
 https://github.com/amandardz/investment_property_tracker

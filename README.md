@@ -14,8 +14,10 @@ https://docs.google.com/presentation/d/1J1BY-O3rSaxkLZy61OxCN8j4KJdzYDuIgz4jcCL-
 https://docs.google.com/presentation/d/1J1BY-O3rSaxkLZy61OxCN8j4KJdzYDuIgz4jcCL-Rgs/edit?usp=sharing
 
 ## APIs Used
--Google Maps
--Zillow
+- Google Maps
+- Zillow
+- Excel
+
 
 ## Tasks
 https://github.com/amandardz/investment_property_tracker

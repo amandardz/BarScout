@@ -8,10 +8,11 @@ As a user, I want to be able to search by city, state, county in order to find p
 This allows the user to keep track of properties within user provided criteria.
 
 ## Wireframe
-https://docs.google.com/presentation/d/1J1BY-O3rSaxkLZy61OxCN8j4KJdzYDuIgz4jcCL-Rgs/edit?usp=sharing
+![Mobile Wireframe](assets\images\mobile-wireframe.PNG)
+![Desktop Wireframe](assets\images\desktop-wireframe.PNG)
 
 ## User Flow Diagram
-https://docs.google.com/presentation/d/1J1BY-O3rSaxkLZy61OxCN8j4KJdzYDuIgz4jcCL-Rgs/edit?usp=sharing
+![Flow Diagram](assets\images\flow-chart.PNG)
 
 ## APIs Used
 - Google Maps

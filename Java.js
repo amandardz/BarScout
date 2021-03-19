@@ -7,7 +7,7 @@ function handleSearchFormSubmit(event) {
     console.error('You need a search input value!');
     return;
   }
-  var queryString = './search-results.html?q=' + searchInputVal + '&format=' + formatInputVal;
+  var queryString = /*add next index here/** */ + searchInputVal + '&format=' + formatInputVal;
   location.replace(queryString);
 }
 searchFormEl.addEventListener('submit', handleSearchFormSubmit);

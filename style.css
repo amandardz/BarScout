@@ -19,6 +19,7 @@ body{
     font-weight: 400;
     -webkit-font-smoothing: antialiased; 
     background-position: center;
+    
 }
 .container{
     position: relative;
@@ -32,7 +33,7 @@ body{
     margin-top: 15px;
     margin-bottom: 15px;
     color: white;
-  }
+ }
 .container:after{
     content: '';
     width: 300px;
@@ -55,22 +56,25 @@ body{
     z-index: 1;
 }
 .btn{
-    width: 180px;
-    height: 40px;
-    background: #00B4CC;
+    width: 82%;
+    height: 30px;
+    background: #599695;
     text-align: baseline;
     color: #fff;
-    border-radius: 0 5px 5px 0;
+    border-radius: 7px;
+    border-style: hidden;
     cursor: pointer;
     font-size: 15px;
     padding: 20px 1;
     bottom: 280px;
     margin: 8px;
+    font-family: 'Noto Sans', sans-serif;
 }
 #text{
     width: 200px;
     height: 40px;
     margin: 20px;
+    font-family: 'Noto Sans', sans-serif;
 }
   @media screen and (max-width: 600px) {
     .container {

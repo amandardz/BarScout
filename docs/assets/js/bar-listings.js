@@ -15,10 +15,8 @@ mobileMenuCloseBtn.addEventListener('click', function() {
 
 
 var getBarInfo = function (userInput) {
-    var zillowUrl = 'https://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz16qiwimmosr_aypsc&citystatezip=Seattle%2C+WA' 
-    console.log(zillowUrl)
-
-    fetch(zillowUrl)
+    var placesUrl = 
+    fetch(placesUrl)
         .then(function (response){
             return response.json();
         })

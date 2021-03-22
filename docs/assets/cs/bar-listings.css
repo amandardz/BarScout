@@ -1,10 +1,7 @@
 * {
-    box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navigation Bar */
@@ -47,34 +44,10 @@ body {
 
 .burger {
     display: none;
-    cursor: pointer;
-}
-
-.burger div, .close div {
-    width: 23px;
-    background-color: white;
-    margin: 5px;
-    border-radius: 3px;
-}
-
-.burger div, .filter div {
-    height: 2px;
 }
 
 .close {
     display: none;
-}
-
-.close div {
-    height: 3px;
-}
-
-.close .line1 {
-    transform: rotate(-45deg) translate(-3px, 3px);
-}
-
-.close .line2 {
-    transform: rotate(45deg) translate(-3px, -3px)
 }
 
 /* Bar Search Menu */
@@ -82,20 +55,22 @@ body {
     background-color: grey;
 }
 
+
 .filter {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5px;
 }
 
 .filter div {
     background-color: white;
     margin: 2px;
     border-radius: 3px;
+    height: 2px;
 }
 
+/* Create the filter image */
 .filter .line1 {
     width: 25px;
 }
@@ -106,6 +81,10 @@ body {
 
 .filter .line3 {
     width: 5px;
+}
+
+.filter, .input-group {
+    margin: 5px;
 }
 
 /* Bar Listings */
@@ -159,8 +138,32 @@ body {
     .close {
         display: block;
     }
+
+    .close div {
+        height: 3px;
+    }
+    
+    
+    .close .line1 {
+        transform: rotate(-45deg) translate(-3px, 3px);
+    }
+    
+    .close .line2 {
+        transform: rotate(45deg) translate(-3px, -3px)
+    }
     
     .burger {
         display: block;
+    }
+
+    .burger div, .close div {
+        width: 23px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 3px;
+    }
+    
+    .burger div {
+        height: 2px;
     }
 }

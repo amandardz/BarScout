@@ -16,7 +16,8 @@ This allows the user to also make notes about favorite bars.
 <img src="docs\assets\images\flow-chart.PNG" alt="User Flow Diagram">
 
 ## APIs Used
-- Google API
-- 
+Google API
+
 ## Tasks
+https://amandardz.github.io/BarScout/
 

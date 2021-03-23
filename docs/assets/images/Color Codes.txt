@@ -1,0 +1,5 @@
+Navy: 343945
+Light Blue: 657E90
+Olive: 919F8B
+Beige: C0B5A3
+Sand: F4EAD3

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav-bar, .bar-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    background-color: black;
+    color: white;
+}
+
+.city-searched, .burger {
+    margin: 2%;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.menu-links li {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu-links li a:hover {
+    background-color: #555;
+    padding: 10px;
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+/* Bar Search Menu */
+.bar-search {
+    background-color: grey;
+}
+
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filter div {
+    background-color: white;
+    margin: 2px;
+    border-radius: 3px;
+    height: 2px;
+}
+
+/* Create the filter image */
+.filter .line1 {
+    width: 25px;
+}
+
+.filter .line2 {
+    width: 15px;
+}
+
+.filter .line3 {
+    width: 5px;
+}
+
+.filter, .input-group {
+    margin: 5px;
+}
+
+/* Bar Listings */
+.bar-listings {
+    /* overflow: scroll; */
+}
+
+.bar-container {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bar-image {
+    border: black dashed 1px;
+    float: left;
+    border-radius: 5px;
+    width: 30%;
+    height: 100px;
+}
+
+.bar-info {
+    border: black solid 1px;
+    float: left;
+    width: 60%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    .menu-links {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    .close {
+        display: block;
+    }
+
+    .close div {
+        height: 3px;
+    }
+    
+    
+    .close .line1 {
+        transform: rotate(-45deg) translate(-3px, 3px);
+    }
+    
+    .close .line2 {
+        transform: rotate(45deg) translate(-3px, -3px)
+    }
+    
+    .burger {
+        display: block;
+    }
+
+    .burger div, .close div {
+        width: 23px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 3px;
+    }
+    
+    .burger div {
+        height: 2px;
+    }
+}

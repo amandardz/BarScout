@@ -5,13 +5,13 @@ var searchBtn = document.querySelector('.search-button');
 var searchInput = document.querySelector('.search-input');
 
 mobileMenuBtn.addEventListener('click', function() {
-    menuLinks.style.transform = 'translateX(0)';
+    menuLinks.classList.add('active');
 });
 
 mobileMenuCloseBtn.addEventListener('click', function() {
-    menuLinks.style.transform = 'translateX(100%)'
+    menuLinks.classList.remove('active');
+    
 })
-
 
 var getBarInfo = function (userInput) {
     var placesUrl = 'https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + userInput + ' bars&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyBZy_-Hm-NJBX4uoI3-evIuIKorhTOeQJ8'

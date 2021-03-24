@@ -5,7 +5,7 @@ This web application allows you to find and save bars in different cities, state
 
 ## User Story
 As a user, I want to be able to search by city, state, county in order to find bars within the user provided criteria.
-This allows the user to keep of favorite bars within user provided criteria. 
+This allows the user to keep track of favorite bars within user provided criteria. 
 This allows the user to also make notes about favorite bars. 
 
 ## Wireframe

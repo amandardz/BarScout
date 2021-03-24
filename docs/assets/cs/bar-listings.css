@@ -107,7 +107,6 @@
     float: left;
     border-radius: 5px;
     width: 30%;
-    height: 100px;
 }
 
 .bar-info {
@@ -116,6 +115,14 @@
     width: 60%;
     height: 100px;
     border-radius: 5px;
+}
+
+.bar-details {
+    margin-left: 2%;
+}
+
+.bar-details li {
+    /* list-style: none; */
 }
 
 /* Media queries */

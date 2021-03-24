@@ -6,7 +6,7 @@ html{
     width: 95vw;
     height: 95vh;
 }
-body::before{
+body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

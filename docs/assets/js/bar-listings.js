@@ -14,6 +14,16 @@ mobileMenuCloseBtn.addEventListener('click', function() {
     
 })
 
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+
+
 var getLocation = function (userInput) {
     var placesUrl = 'https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + userInput + '&inputtype=textquery&fields=name,geometry&key=AIzaSyBZy_-Hm-NJBX4uoI3-evIuIKorhTOeQJ8'
 
@@ -80,7 +90,18 @@ var getLocation = function (userInput) {
                     // }
                 })
         })
+    
 };
+
+
+let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
 
 
 

@@ -125,6 +125,17 @@
     /* list-style: none; */
 }
 
+#map {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Media queries */
 @media (max-width: 600px) {
     .menu-links {

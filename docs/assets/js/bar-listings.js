@@ -14,7 +14,6 @@ mobileMenuCloseBtn.addEventListener('click', function() {
     
 })
 
-
 var getLocation = function (userInput) {
     var placesUrl = 'https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + userInput + '&inputtype=textquery&fields=name,geometry&key=AIzaSyBZy_-Hm-NJBX4uoI3-evIuIKorhTOeQJ8'
 
@@ -91,7 +90,9 @@ var getLocation = function (userInput) {
                 })
             
         })
+    
 };
+
 var map;
 var mapEl = document.getElementById('maps')
 function initMap () {
@@ -99,6 +100,7 @@ function initMap () {
         zoom: 15,
     });
 }
+
 
 searchBtn.addEventListener('click', function(event){
     event.preventDefault();

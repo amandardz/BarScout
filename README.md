@@ -1,12 +1,11 @@
 # BarScout
 
 ## Description
-This web application allows you to find and save bars in different cities, states, and counties. You will be able to keep track of favorite bars and creates notes for each favorite bar. 
+This web application allows you to find and save bars in different cities, states, and counties. You will be able to locate the bars near the searched location on a map.
 
 ## User Story
-As a user, I want to be able to search by city, state, county in order to find bars within the user provided criteria.
-This allows the user to keep track of favorite bars within user provided criteria. 
-This allows the user to also make notes about favorite bars. 
+As a user, I want to be able to search by city, state, county in order to find bars within the user provided criteria. 
+As a user, I want to also be able to see the bars around the user provided criteria on a map. 
 
 ## Wireframe
 <img src='docs\assets\images\mobile-homepage.PNG' alt='Mobile Homepage Wireframe'>
@@ -21,6 +20,7 @@ This allows the user to also make notes about favorite bars.
 
 ## APIs Used
 Google API
+Google Maps API
 
 ## Tasks
 https://amandardz.github.io/BarScout/

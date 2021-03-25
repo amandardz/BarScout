@@ -1,7 +1,7 @@
 # BarScout
 
 ## Description
-This web application allows you to find and save bars in different cities, states, and counties. You will be able to locate the bars near the searched location on a map.
+This web application allows you to find bars in different cities, states, and counties. You will also be able to locate the bars near the searched location on a map.
 
 ## User Story
 As a user, I want to be able to search by city, state, county in order to find bars within the user provided criteria. 

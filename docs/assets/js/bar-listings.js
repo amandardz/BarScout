@@ -6,12 +6,15 @@ var searchBtn = document.querySelector('.search-button');
 var searchInput = document.querySelector('.search-input');
 var homeBtn = document.querySelector('.btn');
 var homeInput = document.querySelector('#text');
+var homeSearchInput;
+homeBtn.addEventListener('click', function(event) {
+    event.preventDefault();
 
-// homeBtn.addEventListener('click', function() {
-//     // var homeSearchInput = homeInput.value
-//     // getLocation(homeSearchInput); 
-//     document.location.href ='.html';
-// });
+    window.location.href='barlistings.html'
+    homeSearchInput = homeInput.value
+    getLocation(homeSearchInput); 
+   // document.location.href ='.html';
+});
 
 // Event Listeners for Hamburger Menu
 mobileMenuBtn.addEventListener('click', function() {
@@ -132,11 +135,7 @@ searchBtn.addEventListener('click', function(event){
     var userInput = searchInput.value
     console.log(userInput);
     getLocation(userInput);
-<<<<<<< HEAD
-});
-=======
     mapEl.style.display = 'block';
     
 });
 
->>>>>>> 0d6dc554aa7c73215758809c3a2220bf753177c4

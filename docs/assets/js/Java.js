@@ -1,17 +1,12 @@
-// var searchFormEl = document.querySelector('#search-form');
-// function handleSearchFormSubmit(event) {
-//   event.preventDefault();
-//   var searchInputVal = document.querySelector('#search-input').value;
-//   var formatInputVal = document.querySelector('#format-input').value;
-//   if (!searchInputVal) {
-//     console.error('You need a search input value!');
-//     return;
-//   }
-//   var queryString = './bar-listings.html?q=' + searchInputVal + '&format=' + formatInputVal;
-//   location.replace(queryString);
-// }
-// searchFormEl.addEventListener('submit',handleSearchFormSubmit);
+var homeBtn = document.querySelector('.btn');
+var homeInput = document.querySelector('#text');
 
-// // console.log(submit);
+var homeSearchInput;
+homeBtn.addEventListener('click', function(event) {
+    event.preventDefault();
 
-onclick={("search") => {window.location.href="https://github.com/amandardz/BarScout/blob/main/docs/bar-listings.html"}}
+    window.location.href='barlistings.html'
+    homeSearchInput = homeInput.value
+    getLocation(homeSearchInput); 
+//    document.location.href ='barlistings.html';
+});

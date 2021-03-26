@@ -25,6 +25,8 @@ html {
     /* margin-top: 15px;
     margin-bottom: 15px; */
     color: white;
+    width: 250px;
+    height: auto;
 }
 
 /* .container:after {

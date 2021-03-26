@@ -193,10 +193,14 @@
     }
 }
 
-
-
 @media (min-width: 601px) {
      #sideBarLogo {
          display: none;
      }
 }
+@media (max-width: 480px) {
+    .bar-search{
+        margin-right: auto;
+        margin-left: auto;
+        width: max-content;
+    }

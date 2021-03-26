@@ -4,6 +4,14 @@ var menuLinks = document.querySelector('.menu-links');
 var cityName = document.querySelector('span')
 var searchBtn = document.querySelector('.search-button');
 var searchInput = document.querySelector('.search-input');
+var homeBtn = document.querySelector('.btn');
+var homeInput = document.querySelector('#text');
+
+// homeBtn.addEventListener('click', function() {
+//     // var homeSearchInput = homeInput.value
+//     // getLocation(homeSearchInput); 
+//     document.location.href ='.html';
+// });
 
 mobileMenuBtn.addEventListener('click', function() {
     menuLinks.classList.add('active');

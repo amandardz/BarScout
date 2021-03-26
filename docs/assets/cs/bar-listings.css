@@ -6,6 +6,7 @@
     font-size: 20px;
 }
 
+
 /* Navigation Bar */
 .nav-bar, .bar-search{
     display: flex;
@@ -14,81 +15,60 @@
 }
 
 .nav-bar {
-    background-color: #657e90 ;
+    background-color: #0b2333;
     color: white;
 }
 
-.city-searched, .burger {
-    margin: 2%;
+.city-searched {
+    font-weight: bold;
+    margin-left: 20px;
 }
 
-.menu-links {
-    display: flex;
-    justify-content: space-around;
-    width: 45%;
+#navBarLogo, .burger {
+    margin-right: 20px;
 }
 
-.menu-links li {
-    list-style: none;
-    padding: 10px;
-}
-
-.menu-links li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.menu-links li a:hover {
-    background-color: #555;
-    padding: 10px;
-}
-
-.burger {
-    display: none;
-}
-
-.close {
+.menu-links, .sideBarText, .burger, .close {
     display: none;
 }
 
 .input-group {
-    margin: 5px;
+    display: flex;
 }
 
-/* Bar Listings */
-.bar-listings {
-    /* overflow: scroll; */
+input {
+    border-radius: 5px;
 }
 
+.input-group button {
+    background-color: #277cb2;
+    border: none;
+    border-radius: 5px;
+    width: 35px;
+}
+
+/* Bar Content */
 .bar-container {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
+    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     flex-direction: column;
-}
-
-.image-style {
-    border-radius: 30px;
-    position: relative;
+    padding: 10px;
 }
 
 .bar-info {
-    border: black solid 1px;
-    width: 400px;
+    width: 300px;
     border-radius: 5px;
-    position: absolute;
-    margin-top: 20px;
     background-color: #f5f5f5;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .bar-details {
-    margin-left: 2%;
+    margin-left: 5px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -96,21 +76,16 @@
     list-style: none;
 }
 
+.bar-phone {
+    list-style: none;
+    margin-left: 5px;
+}
+
+/* Map */
 #maps {
     display: none;
     width: 100%;
     height: 500px;
-}
-
-#map {
-    height: 100%;
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 /* Media queries */
@@ -118,6 +93,11 @@ body {
     * {
         font-size: 16px;
     }
+    /* Hamburger Menu */
+    #navBarLogo {
+        display: none;
+    }
+
     .menu-links {
         position: absolute;
         height: 100vh;
@@ -131,6 +111,22 @@ body {
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+    }
+
+    .menu-links li {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .menu-links li a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .menu-links li a:hover {
+        background-color: #555;
+        padding: 10px;
     }
 
     .menu-links.active {
@@ -168,6 +164,7 @@ body {
     .burger div {
         height: 2px;
     }
+
     #close-x {
         margin: auto;
         padding-bottom: 60px;
@@ -180,12 +177,62 @@ body {
     }
 
     .sideBarText {
+        display: block;
         font-size: large;
+    }
+
+    /* Bar Content */
+    .bar-listings {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bar-container {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .bar-info {
+        width: 300px;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .bar-details {
+        margin-left: 5px;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .image-style {
+        height: 250px;
+        width: 90vw;
+        border-radius: 10px;
     }
 }
 
-@media (min-width: 601px) {
-     #sideBarLogo {
-         display: none;
-     }
+@media (min-width: 769px) {
+    /* Bar Content */
+    .bar-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bar-listings {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+

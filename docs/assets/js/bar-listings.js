@@ -77,7 +77,12 @@ var getLocation = function (userInput) {
                                     phoneNum.innerHTML = 'Phone Number: UNAVAILABLE'
                                 }
                                 
-
+                                //Event Listener to move down to the map when user clicks on the bar result container
+                                barResultContainer.addEventListener('click', function(){
+                                    document.getElementById('map').scrollIntoView({
+                                        behavior: 'smooth'
+                                    });
+                                })
                             })
                     }
 
@@ -97,6 +102,7 @@ var getLocation = function (userInput) {
                         map.panTo(location)
                         
 
+
                 })
             
         })
@@ -104,7 +110,8 @@ var getLocation = function (userInput) {
 };
 
 var map;
-var mapEl = document.getElementById('maps')
+var mapEl = document.getElementById('map')
+
 function initMap () {
     map = new google.maps.Map(mapEl, {
         zoom: 15,
@@ -120,3 +127,4 @@ searchBtn.addEventListener('click', function(event){
     mapEl.style.display = 'block';
     
 });
+

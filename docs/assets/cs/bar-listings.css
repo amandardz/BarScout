@@ -82,7 +82,7 @@ input {
 }
 
 /* Map */
-#maps {
+#map {
     display: none;
     width: 100%;
     height: 500px;

@@ -5,6 +5,18 @@ var cityName = document.querySelector('span')
 var searchBtn = document.querySelector('.search-button');
 var searchInput = document.querySelector('.search-input');
 var barListings = document.querySelector('.bar-listings');
+var homeBtn = document.querySelector('.btn');
+// var homeInput = document.querySelector('#text');
+
+// var homeSearchInput;
+// homeBtn.addEventListener('click', function(event) {
+//     event.preventDefault();
+
+//     // window.location.href='barlistings.html'
+//     // homeSearchInput = homeInput.value
+//     getLocation(homeSearchInput); 
+//    document.location.href ='barlistings.html';
+// });
 
 // Event Listeners for Hamburger Menu
 mobileMenuBtn.addEventListener('click', function() {
@@ -131,3 +143,10 @@ searchBtn.addEventListener('click', function(event){
     barListings.innerHTML = '';
 });
 
+// window.addEventListener('load', (){
+//     // const params = (new URL(document.location)).searchParams;
+//     // const name =params.get('City-County-State')
+//     const name = localStorage.getItem('name');
+
+//     document.getElementById('results').innerHTML = name;
+// })

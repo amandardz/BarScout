@@ -17,8 +17,8 @@ As a user, I want to also be able to see the bars around the user provided crite
 <img src='docs\assets\images\user-flow-diagram.PNG' alt='User Flow Diagram'>
 
 ## APIs Used
-Google API
-Google Maps API
+- Google Places/Place Details API
+- Google Maps API
 
 ## Tasks
 https://amandardz.github.io/BarScout/

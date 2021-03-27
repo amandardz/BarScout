@@ -46,13 +46,14 @@ main {
 }
 
 .btn {
-    background: #599695;
+    background: #277cb2;
     color: #fff;
     display: flex;
     align-items: center;
     width: 100%;
+    margin-top: 20px;
     height: 30px;
-    padding: 20px;
+    padding: 23px;
     border-radius: 10px;
     border-style: hidden;
     cursor: pointer;

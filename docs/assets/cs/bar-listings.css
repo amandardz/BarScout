@@ -220,19 +220,6 @@ input {
     }
 }
 
-<<<<<<< HEAD
-@media (min-width: 601px) {
-     #sideBarLogo {
-         display: none;
-     }
-}
-@media (max-width: 480px) {
-    .bar-search{
-        margin-right: auto;
-        margin-left: auto;
-        width: max-content;
-    }
-=======
 @media (min-width: 769px) {
     /* Bar Content */
     .bar-content {
@@ -249,4 +236,3 @@ input {
     }
 }
 
->>>>>>> 0d6dc554aa7c73215758809c3a2220bf753177c4

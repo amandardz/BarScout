@@ -4,6 +4,7 @@ var menuLinks = document.querySelector('.menu-links');
 var cityName = document.querySelector('span')
 var searchBtn = document.querySelector('.search-button');
 var searchInput = document.querySelector('.search-input');
+var barListings = document.querySelector('.bar-listings');
 
 // Event Listeners for Hamburger Menu
 mobileMenuBtn.addEventListener('click', function() {
@@ -47,17 +48,19 @@ var getLocation = function (userInput) {
                             })
                             .then(function (info) {
                                 console.log(info)
-                                var barListings = document.querySelector('.bar-listings')
+
                                 // Creating a container to hold bar results in
                                 var barResultContainer = document.createElement('div')
                                 barResultContainer.classList.add('bar-container')
                                 barListings.append(barResultContainer)
                                 
                                 //Creating a container to hold bar image within results container
+                                
                                 var barImage = document.createElement('div')
                                 barImage.classList.add('bar-image')
                                 barResultContainer.append(barImage)
                                 barImage.innerHTML = '<img class="image-style" src="' + 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=300&maxheight=300&photoreference=' + bars.results[i].photos[0].photo_reference + '&key=AIzaSyBZy_-Hm-NJBX4uoI3-evIuIKorhTOeQJ8" alt="bar image">'
+
                                 
                                 //Creating a container to hold bar information within results container
                                 var barInfo = document.createElement('div')
@@ -125,6 +128,6 @@ searchBtn.addEventListener('click', function(event){
     console.log(userInput);
     getLocation(userInput);
     mapEl.style.display = 'block';
-    
+    barListings.innerHTML = '';
 });
 

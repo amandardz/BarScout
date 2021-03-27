@@ -10,12 +10,6 @@ homeBtn.addEventListener('click', function(event) {
     getLocation(homeSearchInput); 
 //    document.location.href ='barlistings.html';
 });
-// window.addEventListener('load', (){
-//     const params = (new URL(document.location)).searchParams;
-//     const name =params.get('City-County-State')
-
-//     document.getElementById('.search-input').innerHTML;
-// })
 function handleSubmit(){
     const name = document.getElementById('text').value;
 

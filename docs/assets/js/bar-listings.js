@@ -140,3 +140,10 @@ searchBtn.addEventListener('click', function(event){
     
 });
 
+// window.addEventListener('load', (){
+//     // const params = (new URL(document.location)).searchParams;
+//     // const name =params.get('City-County-State')
+//     const name = localStorage.getItem('name');
+
+//     document.getElementById('results').innerHTML = name;
+// })

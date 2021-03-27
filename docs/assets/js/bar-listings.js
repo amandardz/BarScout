@@ -6,17 +6,6 @@ var searchBtn = document.querySelector('.search-button');
 var searchInput = document.querySelector('.search-input');
 var barListings = document.querySelector('.bar-listings');
 var homeBtn = document.querySelector('.btn');
-// var homeInput = document.querySelector('#text');
-
-// var homeSearchInput;
-// homeBtn.addEventListener('click', function(event) {
-//     event.preventDefault();
-
-//     // window.location.href='barlistings.html'
-//     // homeSearchInput = homeInput.value
-//     getLocation(homeSearchInput); 
-//    document.location.href ='barlistings.html';
-// });
 
 // Event Listeners for Hamburger Menu
 mobileMenuBtn.addEventListener('click', function() {
@@ -67,7 +56,6 @@ var getLocation = function (userInput) {
                                 barListings.append(barResultContainer)
                                 
                                 //Creating a container to hold bar image within results container
-                                
                                 var barImage = document.createElement('div')
                                 barImage.classList.add('bar-image')
                                 barResultContainer.append(barImage)
@@ -142,11 +130,3 @@ searchBtn.addEventListener('click', function(event){
     mapEl.style.display = 'block';
     barListings.innerHTML = '';
 });
-
-// window.addEventListener('load', (){
-//     // const params = (new URL(document.location)).searchParams;
-//     // const name =params.get('City-County-State')
-//     const name = localStorage.getItem('name');
-
-//     document.getElementById('results').innerHTML = name;
-// })

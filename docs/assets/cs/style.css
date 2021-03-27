@@ -1,69 +1,67 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-html {
+body {
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+}
+
+/* Background Image */
+.background {
     width: 100vw;
     height: 100vh;
+    
 }
 
-.background {
-   width: 100%;
-   height: 100%;
-}
-
+/* Logo and Button */
 .container {
     position: absolute;
-    /* width: 500px;
-    height: 500px; */
-    top: calc(50% - 175px);
-    left: calc(50% - 125px);
-    background: inherit;
+    top: 50%;
+    left: 50%;
+    margin-top: -128px;
+    margin-left: -200px;
     border-radius: 2px;
-    /* overflow: hidden; */
-    /* margin-top: 15px;
-    margin-bottom: 15px; */
     color: white;
-    width: 250px;
+    width: 400px;
     height: auto;
 }
 
-/* .container:after {
-    content: '';
-    width: 400px;
-    height: 300px;
-    background: inherit;
-    position: absolute;
-    left: -25px;
-    right: 0;
-    top: -25px;
-    bottom: 0;
-    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
-    filter: blur(10px);
-} */
+#logoText {
+    font-size: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .search-container {
-    position: absolute;
-    /* margin-top: 50px; */
-    text-align: center;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn {
+    background: #599695;
+    color: #fff;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 30px;
-    background: #599695;
-    text-align: baseline;
-    color: #fff;
-    border-radius: 7px;
+    padding: 20px;
+    border-radius: 10px;
     border-style: hidden;
     cursor: pointer;
-    font-size: 15px;
-    padding: 20px 1;
-    bottom: 280px;
-    /* margin: 8px; */
+    font-size: 20px;
     font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 #text {
@@ -76,7 +74,6 @@ html {
 .logo {
     height: 55%;
     width: 65%;
-
     position: relative;
 }
 
@@ -84,5 +81,21 @@ html {
     .background{
         width: 100vw;
         height: 100vh;
+    }
+
+    .container {
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        margin-top: -93px;
+        margin-left: -150px;
+    }
+
+    #logoText {
+        font-size: 55px;
+    }
+
+    .btn {
+        font-size: 15px;
     }
 }

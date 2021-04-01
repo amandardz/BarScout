@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>BarScout</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Quicksand:wght@700&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel=stylesheet href='assets/cs/bar-listings.css'>
 </head>
+
 <body>
     <header>
         <nav class='nav-bar'>
@@ -18,7 +21,8 @@
 
             <ul class='menu-links'>
                 <li>
-                    <img id="sideBarLogo" src='assets/images/BarScout-Logo_Test2.png' alt='BarScout-Logo' width="120" height="65">
+                    <img id="sideBarLogo" src='assets/images/BarScout-Logo_Test2.png' alt='BarScout-Logo' width="120"
+                        height="65">
                     <div id="close-x" class="close">
                         <div class='line1'></div>
                         <div class='line2'></div>
@@ -30,11 +34,13 @@
 
             <div class='input-group'>
                 <input class='search-input' id='results' placeholder='City, County, State'>
-                <button class='search-button fa fa-search'></button>
+                <button onclick='save()' class='search-button fa fa-search'></button>
+                <button onclick='view()' class='recentSearch'>V</button>
             </div>
 
             <div>
-                <img id="navBarLogo" src='assets/images/BarScout-Logo_Test2.png' alt='BarScout-Logo' width="120" height="65">
+                <img id="navBarLogo" src='assets/images/BarScout-Logo_Test2.png' alt='BarScout-Logo' width="120"
+                    height="65">
             </div>
 
             <div class='burger'>
@@ -45,15 +51,22 @@
         </nav>
 
     </header>
+
     <main>
-        <div class='bar-content'>
+        <div>
+            <div id="output"></div>
+        </div>
+        <div id='content' class='bar-content'>
             <div class='bar-listings'>
             </div>
             <div id='map'></div>
         </div>
     </main>
-  
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZy_-Hm-NJBX4uoI3-evIuIKorhTOeQJ8&libraries=places&callback=initMap"></script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZy_-Hm-NJBX4uoI3-evIuIKorhTOeQJ8&libraries=places&callback=initMap">
+    </script>
     <script src="assets/js/bar-listings.js"></script>
 </body>
+
 </html>

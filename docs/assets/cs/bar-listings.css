@@ -48,6 +48,27 @@ input {
     width: 45px;
 }
 
+.recentSearch {
+        color: black;
+        font-weight: 700;
+        background-color: #007bff;
+        border-color: #007bff;
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-left: 10px;
+        border-radius: .25rem;
+        transition: color .15s;
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+}
+
+
 /* Bar Content */
 .bar-container {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

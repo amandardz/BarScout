@@ -6,6 +6,7 @@ var searchBtn = document.querySelector('.search-button');
 var searchInput = document.querySelector('.search-input');
 var barListings = document.querySelector('.bar-listings');
 var homeBtn = document.querySelector('.btn');
+var citySearchList = document.querySelector('.collection')
 
 // Event Listeners for Hamburger Menu
 mobileMenuBtn.addEventListener('click', function () {
@@ -29,11 +30,17 @@ function save() {
     old_data.push(new_data);
 
     localStorage.setItem('data', JSON.stringify(old_data));
+
 }
 
 function view() {
-    if (localStorage.getItem('data') != null) {
-        document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('data'));
+    var cityInput = localStorage.getItem('data') 
+    if (cityInput != null) { 
+        for(var i = 0; i < cityInput.value[i].length; i++){
+            let cityListItem = document.createElement('li')
+            cityListItem.innerHTML = JSON.parse(localStorage.getItem('data'));
+            citySearchList.appendChild(cityListItem)
+        }
     }
 }
 

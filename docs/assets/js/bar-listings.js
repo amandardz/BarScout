@@ -8,6 +8,7 @@ var barListings = document.querySelector('.bar-listings');
 var homeBtn = document.querySelector('.btn');
 var citySearchList = document.querySelector('.collection')
 
+
 // Event Listeners for Hamburger Menu
 mobileMenuBtn.addEventListener('click', function () {
     menuLinks.classList.add('active');
@@ -18,32 +19,13 @@ mobileMenuCloseBtn.addEventListener('click', function () {
 
 })
 
-// Local Storage For Saved Searches
-function save() {
-    var new_data = ' ' + document.getElementById('results').value;
-
-    if (localStorage.getItem('data') == null) {
-        localStorage.setItem('data', '[]');
-    }
-
-    var old_data = JSON.parse(localStorage.getItem('data'));
-    old_data.push(new_data);
-
-    localStorage.setItem('data', JSON.stringify(old_data));
-
+//Print city list
+function view(city) {
+    let cityListItem = document.createElement('li')
+    cityListItem.classList.add('collection-item')
+    cityListItem.textContent = city
+    citySearchList.appendChild(cityListItem)
 }
-
-function view() {
-    var cityInput = localStorage.getItem('data') 
-    if (cityInput != null) { 
-        for(var i = 0; i < cityInput.value[i].length; i++){
-            let cityListItem = document.createElement('li')
-            cityListItem.innerHTML = JSON.parse(localStorage.getItem('data'));
-            citySearchList.appendChild(cityListItem)
-        }
-    }
-}
-
 
 // Retrieving bar information according to user criteria from Google API
 var getLocation = function (userInput) {
@@ -156,8 +138,10 @@ function initMap() {
 searchBtn.addEventListener('click', function (event) {
     event.preventDefault();
     var userInput = searchInput.value
+    localStorage.setItem('city', userInput)
     console.log(userInput);
     getLocation(userInput);
+    view(userInput)
     mapEl.style.display = 'block';
     barListings.innerHTML = '';
 });

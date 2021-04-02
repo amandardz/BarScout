@@ -48,6 +48,10 @@ input {
     width: 45px;
 }
 
+.collection {
+    margin: 0;
+}
+
 .recentSearch {
         color: black;
         font-weight: 700;

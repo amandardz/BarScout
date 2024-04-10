@@ -29,7 +29,7 @@ function view(city) {
 
 // Retrieving bar information according to user criteria from Google API
 var getLocation = function (userInput) {
-    var placesUrl = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + userInput + '&inputtype=textquery&fields=name,geometry&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
+    var placesUrl = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + userInput + '&inputtype=textquery&fields=name,geometry&key='
 
     fetch(placesUrl, {
             headers: {
@@ -43,7 +43,7 @@ var getLocation = function (userInput) {
             console.log(city)
             cityName.textContent = city.candidates[0].name
 
-            var barsUrl = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + city.candidates[0].geometry.location.lat + ',' + city.candidates[0].geometry.location.lng + '&radius=1500&type=bar&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
+            var barsUrl = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + city.candidates[0].geometry.location.lat + ',' + city.candidates[0].geometry.location.lng + '&radius=1500&type=bar&key='
 
 
 
@@ -59,7 +59,7 @@ var getLocation = function (userInput) {
                     console.log(bars)
 
                     function renderDetails(i) {
-                        var getMoreBarInfo = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=' + bars.results[i].place_id + '&fields=formatted_phone_number,opening_hours,website&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
+                        var getMoreBarInfo = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=' + bars.results[i].place_id + '&fields=formatted_phone_number,opening_hours,website&key='
 
                         fetch(getMoreBarInfo)
                             .then(function (response) {
@@ -77,7 +77,7 @@ var getLocation = function (userInput) {
                                 var barImage = document.createElement('div')
                                 barImage.classList.add('bar-image')
                                 barResultContainer.append(barImage)
-                                barImage.innerHTML = '<img class="image-style" src="' + 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=300&maxheight=300&photoreference=' + bars.results[i].photos[0].photo_reference + '&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng" alt="bar image">'
+                                barImage.innerHTML = '<img class="image-style" src="' + 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=300&maxheight=300&photoreference=' + bars.results[i].photos[0].photo_reference + '&key=" alt="bar image">'
 
 
                                 //Creating a container to hold bar information within results container

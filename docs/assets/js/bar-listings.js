@@ -29,9 +29,13 @@ function view(city) {
 
 // Retrieving bar information according to user criteria from Google API
 var getLocation = function (userInput) {
-    var placesUrl = 'https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + userInput + '&inputtype=textquery&fields=name,geometry&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
+    var placesUrl = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=' + userInput + '&inputtype=textquery&fields=name,geometry&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
 
-    fetch(placesUrl)
+    fetch(placesUrl, {
+            headers: {
+                'x-cors-api-key': 'temp_3740b447056faf5fa34eacb790b57d59'
+            }
+        })
         .then(function (response) {
             return response.json();
         })
@@ -39,11 +43,15 @@ var getLocation = function (userInput) {
             console.log(city)
             cityName.textContent = city.candidates[0].name
 
-            var barsUrl = 'https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + city.candidates[0].geometry.location.lat + ',' + city.candidates[0].geometry.location.lng + '&radius=1500&type=bar&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
+            var barsUrl = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + city.candidates[0].geometry.location.lat + ',' + city.candidates[0].geometry.location.lng + '&radius=1500&type=bar&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
 
 
 
-            fetch(barsUrl)
+            fetch(barsUrl, {
+                    headers: {
+                        'x-cors-api-key': 'temp_3740b447056faf5fa34eacb790b57d59'
+                    }
+                })
                 .then(function (response) {
                     return response.json();
                 })
@@ -51,7 +59,7 @@ var getLocation = function (userInput) {
                     console.log(bars)
 
                     function renderDetails(i) {
-                        var getMoreBarInfo = 'https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/details/json?place_id=' + bars.results[i].place_id + '&fields=formatted_phone_number,opening_hours,website&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
+                        var getMoreBarInfo = 'https://proxy.cors.sh/https://acme.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=' + bars.results[i].place_id + '&fields=formatted_phone_number,opening_hours,website&key=AIzaSyAHX4wGil0m6waw6NX8iklZmShG-LW40ng'
 
                         fetch(getMoreBarInfo)
                             .then(function (response) {
@@ -130,6 +138,7 @@ var mapEl = document.getElementById('map')
 
 function initMap() {
     map = new google.maps.Map(mapEl, {
+        // center: city.candidates[0].geometry.location.lat + city.candidates[0].geometry.location.lng,
         zoom: 15,
     });
 }
